@@ -9,11 +9,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Auth0Provider
-      domain="dev-zxt25m4lcno40ulh.us.auth0.com"
+      domain="https://dev-zxt25m4lcno40ulh.us.auth0.com"
       clientId="pFYJM95aPiUKqkhsZ2NWlJuiA8hL1sVx"
-      audience={"http://localhost:3000"}
       authorizationParams={{
-        redirect_uri: `${window.location.origin}/dashboard`,
+        redirect_uri: "http://localhost:3000",
       }}
     >
       <App />
